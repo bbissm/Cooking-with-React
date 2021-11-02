@@ -1,14 +1,2 @@
 [build]
     command = "CI= npm run build"
-    publish = "dist"
-
-[context.production]
-    environment = { NODE_VERSION = "16.13.0", NODE_ENV = "production" }
-
-[dev]
-    command = "yarn start"
-    framework = "#custom"
-    publish = "dist"
-    port = 3000
-    targetPort = 8182
-    NODE_ENV = "development"
