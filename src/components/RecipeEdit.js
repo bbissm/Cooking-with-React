@@ -56,6 +56,15 @@ function RecipeEdit({recipe}) {
                         color="pink"
                         size="regular"
                         outline={true}
+                        placeholder="Image"
+                        value={recipe.image}
+                        onChange={e => handleChange({image: e.target.value})}
+                    />
+                    <Input
+                        type="text"
+                        color="pink"
+                        size="regular"
+                        outline={true}
                         placeholder="Cook Time"
                         value={recipe.cookTime}
                         onChange={e => handleChange({cookTime: e.target.value})}
