@@ -6,9 +6,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    background-color: #c3e6f3;
-}
 *, *::before, *::after {
     font-family: IndieFlower, sans-serif;
 }
