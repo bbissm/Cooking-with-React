@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/Cooking-with-React/static/css/main.fb1c7776.chunk.css",
+    "main.css": "/Cooking-with-React/static/css/main.268a2f96.chunk.css",
     "main.js": "/Cooking-with-React/static/js/main.f7deb273.chunk.js",
     "main.js.map": "/Cooking-with-React/static/js/main.f7deb273.chunk.js.map",
     "runtime-main.js": "/Cooking-with-React/static/js/runtime-main.04f89c96.js",
     "runtime-main.js.map": "/Cooking-with-React/static/js/runtime-main.04f89c96.js.map",
-    "static/css/2.bb5984b7.chunk.css": "/Cooking-with-React/static/css/2.bb5984b7.chunk.css",
+    "static/css/2.6e204cf7.chunk.css": "/Cooking-with-React/static/css/2.6e204cf7.chunk.css",
     "static/js/2.17258906.chunk.js": "/Cooking-with-React/static/js/2.17258906.chunk.js",
     "static/js/2.17258906.chunk.js.map": "/Cooking-with-React/static/js/2.17258906.chunk.js.map",
     "index.html": "/Cooking-with-React/index.html",
-    "static/css/2.bb5984b7.chunk.css.map": "/Cooking-with-React/static/css/2.bb5984b7.chunk.css.map",
-    "static/css/main.fb1c7776.chunk.css.map": "/Cooking-with-React/static/css/main.fb1c7776.chunk.css.map",
+    "static/css/2.6e204cf7.chunk.css.map": "/Cooking-with-React/static/css/2.6e204cf7.chunk.css.map",
+    "static/css/main.268a2f96.chunk.css.map": "/Cooking-with-React/static/css/main.268a2f96.chunk.css.map",
     "static/js/2.17258906.chunk.js.LICENSE.txt": "/Cooking-with-React/static/js/2.17258906.chunk.js.LICENSE.txt",
     "static/media/app.css": "/Cooking-with-React/static/media/IndieFlower-Regular.9bd64a34.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.04f89c96.js",
-    "static/css/2.bb5984b7.chunk.css",
+    "static/css/2.6e204cf7.chunk.css",
     "static/js/2.17258906.chunk.js",
-    "static/css/main.fb1c7776.chunk.css",
+    "static/css/main.268a2f96.chunk.css",
     "static/js/main.f7deb273.chunk.js"
   ]
 }
