@@ -1,10 +1,10 @@
 import React, {useState, useEffect} from 'react';
+import NavigationBar from "./NavigationBar";
 import RecipeList from "./RecipeList";
 import RecipeEdit from "./RecipeEdit";
 import '../css/app.css'
 import "@material-tailwind/react/tailwind.css";
 import uuidv4 from 'uuid/dist/v4'
-import {Button} from "@material-tailwind/react";
 
 export const RecipeContext = React.createContext();
 const LOCAL_STORAGE_KEY = 'cookingWithReact.recipes'
@@ -12,30 +12,36 @@ const LOCAL_STORAGE_KEY = 'cookingWithReact.recipes'
 function App() {
   const [recipes, setRecipes] = useState(sampleRecipes)
   const [selectedRecipeId, setSelectedRecipeId] = useState()
+  const [shownRecipes, setShownRecipes] = useState(recipes)
   const selectedRecipe = recipes.find(recipe => recipe.id === selectedRecipeId)
 
+  // always when the dom changes
   useEffect(() => {
     const recipeJSON = localStorage.getItem(LOCAL_STORAGE_KEY)
     if (recipeJSON != null) setRecipes(JSON.parse(recipeJSON))
   }, [])
 
+  // only when recipes changes
   useEffect(() => {
     localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(recipes))
+    setShownRecipes(recipes)
   }, [recipes])
-
 
   const recipeContextValue =  {
     handleRecipeAdd,
     handleRecipeDelete,
     handleRecipeSelect,
-    handleRecipeChange
+    handleRecipeChange,
+    handleSearch
   }
+
   function handleRecipeSelect(id) {
     if (setSelectedRecipeId != null && setSelectedRecipeId === id) {
       setSelectedRecipeId(undefined)
     }
     setSelectedRecipeId(id);
   }
+
   function handleRecipeAdd() {
     const newRecipe = {
       id: uuidv4(),
@@ -72,14 +78,20 @@ function App() {
     window.location.reload()
   }
 
+  function handleSearch (search) {
+    setShownRecipes(recipes.filter(r => r.name.toLowerCase().includes(search)))
+  }
+
   return (
       <RecipeContext.Provider value={recipeContextValue}>
-        <Button className="flex mx-auto mt-12" color="deepOrange" ripple="light" onClick={handleResetLocalstorage}>Reset Localstorage</Button>
+        <NavigationBar
+            handleResetLocalstorage={handleResetLocalstorage}
+        />
         <div className="md:p-4 md:flex p-4 md:p-0 md:space-x-4 md:flex-row-reverse">
           {selectedRecipe && <RecipeEdit recipe={selectedRecipe}/>}
            <div className="w-full">
             <RecipeList
-                recipes={recipes}
+                recipes={shownRecipes}
                 width={!selectedRecipe && "grid md:grid-cols-2"}
             />
           </div>
