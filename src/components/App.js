@@ -92,7 +92,7 @@ function App() {
            <div className="w-full">
             <RecipeList
                 recipes={shownRecipes}
-                width={!selectedRecipe && "grid md:grid-cols-2"}
+                width={!selectedRecipe && "grid grid-cols-2"}
             />
           </div>
         </div>
