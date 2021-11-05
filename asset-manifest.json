@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Cooking-with-React/static/css/main.b2f04c74.chunk.css",
+    "main.js": "/Cooking-with-React/static/js/main.1185ed39.chunk.js",
+    "main.js.map": "/Cooking-with-React/static/js/main.1185ed39.chunk.js.map",
+    "runtime-main.js": "/Cooking-with-React/static/js/runtime-main.3572c5c9.js",
+    "runtime-main.js.map": "/Cooking-with-React/static/js/runtime-main.3572c5c9.js.map",
+    "static/css/2.bb5984b7.chunk.css": "/Cooking-with-React/static/css/2.bb5984b7.chunk.css",
+    "static/js/2.83d58390.chunk.js": "/Cooking-with-React/static/js/2.83d58390.chunk.js",
+    "static/js/2.83d58390.chunk.js.map": "/Cooking-with-React/static/js/2.83d58390.chunk.js.map",
+    "index.html": "/Cooking-with-React/index.html",
+    "static/css/2.bb5984b7.chunk.css.map": "/Cooking-with-React/static/css/2.bb5984b7.chunk.css.map",
+    "static/css/main.b2f04c74.chunk.css.map": "/Cooking-with-React/static/css/main.b2f04c74.chunk.css.map",
+    "static/js/2.83d58390.chunk.js.LICENSE.txt": "/Cooking-with-React/static/js/2.83d58390.chunk.js.LICENSE.txt",
+    "static/media/app.css": "/Cooking-with-React/static/media/IndieFlower-Regular.9bd64a34.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3572c5c9.js",
+    "static/css/2.bb5984b7.chunk.css",
+    "static/js/2.83d58390.chunk.js",
+    "static/css/main.b2f04c74.chunk.css",
+    "static/js/main.1185ed39.chunk.js"
+  ]
+}
